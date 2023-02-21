@@ -1,4 +1,4 @@
-module github.com/krylovsk/mqtt-benchmark
+module github.com/lijozech-12/mqtt-benchmark
 
 go 1.18
 
