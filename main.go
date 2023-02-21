@@ -130,13 +130,15 @@ func main() {
 		time.Sleep(time.Duration(sleepTime*1000) * time.Millisecond)
 	}
 
-	// collect the results
+	fmt.Println("Hello test on line number 133")  // collect the results  
 	results := make([]*RunResults, *clients)
 	for i := 0; i < *clients; i++ {
 		results[i] = <-resCh
 	}
 	totalTime := time.Since(start)
+	fmt.Println("Hello test on line number 139") 
 	totals := calculateTotalResults(results, totalTime, *clients)
+	fmt.Println("Hello test on line number 141") 
 
 	// print stats
 	printResults(results, totals, *format)
